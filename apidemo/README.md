@@ -14,14 +14,16 @@
      - url:  jdbc:h2:~/blog
      - username:  sa
      - password: 
-  - create table blog (
-      id int auto_increment primary key,
-      category varchar(255), 
-      title varchar(255), 
-      author varchar(255), 
-      contents varchar(1024), 
-      link varchar(500), 
-      is_private tinyint,
-      cdate datetime default now()
-    );
-   
+  - create table
+    ```sql
+    create table blog (
+        id int auto_increment primary key,
+        category varchar(255), 
+        title varchar(255), 
+        author varchar(255), 
+        contents varchar(1024), 
+        link varchar(500), 
+        is_private tinyint,
+        cdate datetime default now()
+      );
+    ```
