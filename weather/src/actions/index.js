@@ -9,12 +9,12 @@ export const FETCH_WEATHER = 'FETCH_WEATHER';
 //  type (mandatory)
 //  payload (optional, data?)
 
-export function fetchWeather(city) {
+export async function fetchWeather(city) {
   const url = `${ROOT_URL}&q=${city}`;
-  const request = axios.get(url);
+  const request = await axios.get(url);
   return {
     type: FETCH_WEATHER,
     payload: request,
-    // name: 'test_coin'
+    name: 'test_coin'
   }
 }

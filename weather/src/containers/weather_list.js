@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import Chart from '../components/chart';
 
 class WeatherList extends Component {
-  renderWeather(cityData) {
+  renderWeather(v) {
+    const cityData = v.d.data;
     // cityData.d(Promise), cityData.n
     // cityData.d.then(
     //   v => console.log(v.data.city.name)
