@@ -14,8 +14,7 @@
      - url:  jdbc:h2:~/blog
      - username:  sa
      - password: 
-  - create script
-    create table blog (
+  - create table blog (
       id int auto_increment primary key,
       category varchar(255), 
       title varchar(255), 
